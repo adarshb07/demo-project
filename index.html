@@ -70,7 +70,6 @@
     </section>
     <!-- Hero Section End -->
 
-
     <!-- News Section -->
 
     <section class="news">
@@ -113,7 +112,6 @@
     </section>
 
     <!-- News Section End -->
-
 
     <!-- What we Do-->
 
@@ -294,6 +292,38 @@
 
     <!-- Team End Here -->
 
+
+    <!-- Learn About Us -->
+
+    <section class="learn-about-us">
+        <h2>Learn About Us</h2>
+        <h4>EXCELLENCE DRIVEN FOR GETTING <br> UNRIVALED RESULTS.</h4>
+        <div class="counter-container">
+            <div class="counter-box">
+                <img src="./assets/svg/01.svg" alt="">
+                <h3 class="count">100</h3>
+                <p>Tons Of Customers</p>
+            </div>
+            <div class="counter-box">
+                <img src="./assets/svg/04.svg" alt="">
+                <h3 class="count">140</h3>
+                <p>No Of Brands Partnership</p>
+            </div>
+            <div class="counter-box">
+                <img src="./assets/svg/03.svg" alt="">
+                <h3 class="count">200</h3>
+                <p>Years Of Experiences</p>
+            </div>
+            <div class="counter-box">
+                <img src="./assets/svg/05.svg" alt="">
+                <h3 class="count">150</h3>
+                <p>Business Inquired</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn About Us End -->
+
     <!-- Our Partners Start  -->
 
     <section class="our-partners">
@@ -312,10 +342,6 @@
     <!-- Our Partners End -->
 
 
-
-
-
-
     <script src="./assets/js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -326,22 +352,21 @@
 
     <!-- <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script> -->
     <script>
-      var typeData = new Typed(".role", {
-        strings: [
-          "System Integration Solution",
-          "Cyber Security Services and Solutions",
-          "Network Infrastructure Solutions",
-          "Professional Services",
-          "Cloud and Licensing Services",
-          "Virtualization Solutions",
-        ],
-        loop: true,
-        typeSpeed: 60,
-        backSpeed: 50,
-        backDelay: 800,
-      });
-
       $(document).ready(function(){
+        var typeData = new Typed(".role", {
+            strings: [
+            "System Integration Solution",
+            "Cyber Security Services and Solutions",
+            "Network Infrastructure Solutions",
+            "Professional Services",
+            "Cloud and Licensing Services",
+            "Virtualization Solutions",
+            ],
+            loop: true,
+            typeSpeed: 60,
+            backSpeed: 50,
+            backDelay: 800,
+        });
         $('.customer-logos').slick({
             slidesToShow: 6,
             slidesToScroll: 1,
@@ -390,6 +415,28 @@
                 }
             }]
         });
+
+        var counters = $(".count");
+        var countersQuantity = counters.length;
+        var counter = [];
+
+        for (i = 0; i < countersQuantity; i++) {
+            counter[i] = parseInt(counters[i].innerHTML);
+        }
+
+        var count = function(start, value, id) {
+            var localStart = start;
+            setInterval(function() {
+            if (localStart < value) {
+                localStart++;
+                counters[id].innerHTML = localStart;
+            }
+            }, 40);
+        }
+
+        for (j = 0; j < countersQuantity; j++) {
+            count(0, counter[j], j);
+        }
 });
 
     </script>

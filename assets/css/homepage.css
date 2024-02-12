@@ -692,6 +692,94 @@ section.our-partners{
 /* Business Partners End */
 
 
+/* learn About Us */
+
+.learn-about-us{
+    margin-top: 5rem;
+    padding: 3rem 6rem;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/BG/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--light-color);
+}
+
+
+.learn-about-us h2{
+    font-size: 1.2rem;
+    color: var(--yellow-color);
+    text-transform: uppercase;
+    margin: 4rem 5rem 0;
+}
+
+.learn-about-us h4{
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    text-transform: capitalize;
+    font-family: 'intern', sans-serif;
+    margin: 1rem 5rem 4rem;
+}
+
+.learn-about-us .counter-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    /* width: 1440px; */
+    margin: 3rem auto;
+    flex-wrap: wrap;
+}
+
+.learn-about-us .counter-container .counter-box{
+    width: 20%;
+    height: 300px;
+    padding: 1.5rem 2rem;
+    /* border-radius: 0.5rem; */
+    box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background-color: var(--yellow-color);
+}
+
+.learn-about-us .counter-container .counter-box img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    padding: 15px;
+}
+
+.learn-about-us .counter-container .counter-box h3{
+    font-size: 2.8rem;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+
+.learn-about-us .counter-container .counter-box p{
+    font-size: 1.2rem;
+    color: var(--light-color);
+    margin-top: 0.5rem;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.learn-about-us .counter-container .counter-box h3::after{
+    content: '+';
+    color: var(--light-color);
+    position: absolute;
+    top: 0;
+    margin-left: 10px;
+    font-size: 2.4rem;
+}
+
+/* learn About Us End Here */
 
 
 @media screen and (max-width: 1250px){
@@ -780,6 +868,29 @@ section.our-partners{
     }
 
     /* Our Partners Ends */
+
+    /* Learn About us */
+
+    .learn-about-us{
+        padding: 3rem 1rem;
+    }
+
+    .learn-about-us h2{
+        font-size: 1.2rem;
+        margin-left: 2.4rem ;
+    }
+
+    .learn-about-us h4{
+        font-size: 2.5rem;
+        margin-left: 2.4rem ;
+    }
+
+    .learn-about-us .counter-container .counter-box{
+        width: 45%;
+    }
+
+
+    /* Learn About us End */
 
 }
 
@@ -940,9 +1051,6 @@ section.our-partners{
         padding: 2rem 3rem;
     }
 
-
-
-
     /* Team End Here */
 
 
@@ -964,9 +1072,38 @@ section.our-partners{
         width: 100%;
     }
 
-
-    
     /* Our Partners Ends */
+
+    /* Learn About us */
+
+    .learn-about-us{
+        padding: 0.5rem 1rem;
+    }
+
+    .learn-about-us h2{
+        font-size: 1rem;
+        margin-left: 0rem ;
+    }
+
+    .learn-about-us h4{
+        font-size: 1.5rem;
+        margin-left: 0rem ;
+    }
+
+    .learn-about-us .counter-container .counter-box{
+        width: 100%;
+        height: 225px;
+    }
+
+    .learn-about-us .counter-container .counter-box h3{
+        font-size: 2.2rem;
+    }
+
+    .learn-about-us .counter-container .counter-box p{
+        font-size: 1rem;
+    }
+    /* Learn About us End */
+
 }
 
 
