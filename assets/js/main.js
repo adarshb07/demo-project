@@ -10,3 +10,10 @@ close_menu.addEventListener("click", () => {
     menu.classList.remove("show");
 });
 
+
+
+
+window.addEventListener("load", function () {
+    const preloader = document.querySelector(".preloader");
+    preloader.classList.add("hide");
+});

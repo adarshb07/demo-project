@@ -299,3 +299,189 @@ li.dropdown a{
         width: 80%;
     }
 }
+
+
+/* Footer */
+.footer {
+    /* position: absolute; */
+   
+    width: 100%;
+    background: #10182F;
+
+  }
+  .footer .footer-row {
+    max-width: 1450px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.5rem;
+    padding: 60px;
+  }
+  .footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: relative;
+  }
+
+  .footer-row .footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.7rem;
+    background-color: var(--tertiary-color);
+    width: 5rem;
+    height: 0.2rem;
+    border-radius: 10rem;
+  }
+
+  .footer-col .links {
+    margin-top: 2rem;
+  }
+  .footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+  }
+  .footer-col .links li a:hover {
+    color: #fff;
+  }
+  .footer-col p {
+    margin: 20px 0;
+    color: #bfbfbf;
+    max-width: 300px;
+  }
+  .footer-col form {
+    display: flex;
+    gap: 5px;
+  }
+  .footer-col input {
+    height: 50px;
+    border-radius: 6px;
+    background: none;
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--tertiary-color) ;
+    caret-color: #fff;
+    color: #fff;
+    padding-left: 10px;
+  }
+  .footer-col input::placeholder {
+    color: #ccc;
+  }
+   .footer-col form button {
+    background: var(--tertiary-color);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 1px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s ease;
+  }
+  .footer-col form button:hover {
+    background: #cecccc;
+  }
+  .footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .footer-col .icons i {
+    font-size: 1.5rem;
+    background-color: var(--tertiary-color);
+    padding: 10px;
+    border-radius: 100%;
+    color: white;
+  }
+  .footer-col .icons i:hover  {
+    color: #fff;
+    background-color: var(--primary-color);
+    transform: translateY(-1px);
+  }
+  .footer-copy{
+    background: #10182F;
+    padding: 20px 0;
+    text-align: center;
+    color: #bfbfbf;
+  }
+  @media (max-width: 768px) {
+    .footer {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      border-radius: 0;
+    }
+    .footer .footer-row {
+      padding: 20px;
+      gap: 1rem;
+    }
+    .footer-col form {
+      display: block;
+    }
+    .footer-col form :where(input, button) {
+      width: 100%;
+    }
+    .footer-col form button {
+      margin: 10px 0 0 0;
+      padding: 1rem;
+    }
+  }
+
+/* End */
+
+
+
+
+/* Preloader */
+
+ /* Preloader CSS */
+ .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader .loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #333;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Add a class to hide the preloader */
+.preloader.hide {
+/* Set opacity to 0 to hide */
+opacity: 0;
+/* Make sure it's hidden by setting display to none */
+display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Preloader End */
